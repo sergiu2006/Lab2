@@ -1,4 +1,4 @@
-package model;
+package org.example.Model;
 
 public class Masina implements Autovehicul {
     private String marca;
