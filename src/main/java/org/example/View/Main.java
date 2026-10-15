@@ -17,12 +17,12 @@ public class Main {
         controller.adaugaAutovehicul(new Motocicleta("Yamaha", 800));
         controller.adaugaAutovehicul(new Masina("Dacia", 450));
 
-        System.out.println("--- Toate autovehiculele din service ---");
+        System.out.println("Toate autovehiculele din service");
         for (Autovehicul a : repo.getToate()) {
             System.out.println(a.getDescriere());
         }
 
-        System.out.println("\n--- Autovehicule cu costul de reparatie > 1000 RON ---");
+        System.out.println("\n Autovehicule cu costul de reparatie > 1000 RON ");
         Autovehicul[] scumpe = controller.filtreazaCostMaiMareDe1000();
         for (Autovehicul a : scumpe) {
             System.out.println(a.getDescriere());
